@@ -38,7 +38,7 @@ def convert_scan_indices(tab_file_path, mzml_file_path, output_file_path):
 
         for row in reader:
 
-            if row and row[0].startswith('['):
+            if row and row[3].startswith('['):
                 continue
 
             # Extract scan index from the "scan" field - now just expecting a number
